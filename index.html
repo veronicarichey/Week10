@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weight Loss Tracker</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <nav class="navbar navbar-light bg-warning">
+            <span class="navbar-brand mb-0 h1">Weight Loss Tracker</span>
+        </nav>
+    </head>
+
+    <body class="container">
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="Date">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="Current-Weight">Weight</label>
+                            <input type="text" class="form-control" id="current-weight" placeholder="lbs">
+                        </div>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="Pounds-Lost">Pounds Lost</label>
+                            <input type="text" class="form-control" id="pounds-lost" placeholder="lbs">
+                        </div>
+                    </div>   
+                 </div>
+                 <button id="add" class="btn btn-success form-control">Submit</button>
+            </div>
+        </div>
+        <table id="list" class="table table-info table-striped">
+            <tr>
+                <th>Date</th>
+                <th>Weight</th>
+                <th>Pounds Lost</th>
+                <th>Delete</th>
+                </tr>
+        </table>
+        
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="WeightLossTracker.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    </body>
+</html>
